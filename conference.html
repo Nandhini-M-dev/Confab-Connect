@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Conferences</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+	<style>
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header
+{
+    height: 100vh;
+    width: 99%;
+    background-image: url('BG.png');
+    background-size: cover;
+}
+.header_menu
+{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: transparent;
+    box-shadow: -2px -2px 20px -2px black;
+}
+
+.logo h1
+{
+    color: white;
+    margin-left: 70px;
+}
+section {
+	width: 100%;
+	height: 100vh;
+	background: url('BG.png');
+	background-size: cover;
+	overflow: hidden;
+}
+
+section .leftBox {
+    width: 50%;
+    height: 100%;
+	float: left;
+	padding: 50px;
+	box-sizing: border-box;
+}
+
+section .leftBox .content {
+	color: #fff;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 40px;
+	transition: .5s;
+}
+
+section .leftBox .content:hover {
+	background: orange;
+}
+
+section .leftBox .content h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+
+section .leftBox .content p {
+	margin: 10px 0 0;
+	padding: 0;
+}
+
+section .events {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	float: right;
+	box-sizing: border-box;
+	padding:1px;
+}
+
+section .events ul {
+	position:absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0;
+	padding: 40px;
+}
+
+section .events ul li {
+	list-style: none;
+	background: #fff;
+	box-sizing: border-box;
+	height: 200px;
+	margin: 15px 0;
+}
+
+section .events ul li .time {
+	position: relative;
+	padding: 20px;
+	background: #262626;
+	box-sizing: border-box;
+	width: 30%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	transition: .5s;
+}
+
+section .events ul li:hover .time {
+	background: orange;
+}
+
+section .events ul li .time h2 {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 60px;
+	line-height: 30px;
+}
+
+section .events ul li .time h2 span {
+	font-size: 30px;
+}
+
+section .events ul li .details {
+	padding: 20px;
+	background: #fff;
+	box-sizing: border-box;
+	width: 70%;
+	height: 100%;
+	float: left;
+}
+
+section .events ul li .details h3 {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-size: 22px;
+}
+
+section .events ul li .details p {
+	position: relative;
+	margin: 10px 0 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+section .events ul li .details a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px 15px;
+	border: 1.5px solid #262626;
+	margin-top: 8px;
+	font-size: 18px;
+	transition: .5s;
+}
+
+section .events ul li .details a:hover {
+	background: orange;
+	color: #fff;
+	border-color: orange;
+}
+footer
+{
+	background-color:#262626 ;
+}
+footer h3{
+	color: white;
+}
+.material-symbols-outlined
+{
+	color:white;
+	padding-right: 10px;
+}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="header_menu">
+			<div class ="logo">
+				<h1>ConfabConnect</h1>
+			</div>
+			<div class="homes">			
+				<a href="index.html"><h3><span class="material-symbols-outlined">home</span></h3></a>
+			</div>
+		</div>
+	<section>
+		<div class="leftBox">
+			<div class="content">
+				<h1>
+					Conferences in India 2024
+				</h1>
+				<p>
+					Conference Alerts is a reputed and globally recognised 
+					platform to find conferences in India and International
+					conferences 2024 in India and abroad.  This first India
+					based online portal is a one stop solution for finding 
+					all upcoming Conferences in India like Engineering 
+					conferences, Healthcare conferences, Medical Science
+					 Conferences, Business Conferences, Social science 
+					 conferences, Interdisciplinary conferences and Life 
+					 science conferences.
+						Here you find the list of International conferences
+					in India along with the Scopus Indexed Conferences, IEEE
+					Conferences, academic conferences and national conferences 
+					on various topics organized by reputed and verified 
+					Organizations only. Along with the conferences you can also 
+					find Online seminars, Workshops, educational events, FDP etc. 
+					Conferences in India will update you with the latest upcoming 
+					conferences in the popular cities like: New Delhi, Bangalore, 
+					Mumbai, Chennai, Pune, Hyderabad, Visakhapatnam, Goa, Kolkata 
+					etc.
+				</p>
+			</div>
+		</div>
+		<div class="events">
+			<ul>
+				<li>
+					<div class="time">
+						<h2>
+							3 <br><span>March</span>
+						</h2>
+					</div>
+					<div class="details">
+						<h3 style= "color: orange;">
+							Conference Details
+						</h3>
+						<p>
+							ICWTIEEE provides an international forum for researchers, developers, 
+							engineers and academicians who are involved in research projects to
+							exchange and share their valuable ideas and research concept.
+						</p>
+						<a href="register.html">Register Here</a>
+					</div>
+					<div style="clear: both;"></div>
+				</li>
+				<li>
+					<div class="time">
+						<h2>
+							1 <br><span>April</span>
+						</h2>
+					</div>
+					<div class="details">
+						<h3 style= "color: orange;">
+							Conference Details:
+						</h3>
+						<p>
+							The ICRICSET conference is an international forum for the
+							presentation of technological advances and research results in the
+						    fields of Recent Innovations in Computer Science, Engineering and 
+							Technology.This event will be organized by Academics conference
+						</p>
+						<a href="register.html">Register Here</a>
+					</div>
+					<div style="clear:both;"></div>
+				</li>
+				<li>
+					<div class="time">
+						<h2>
+							16 <br><span>May</span>
+						</h2>
+					</div>
+					<div class="details">
+
+						<h3 style= "color: orange;">
+							Conference Details
+						</h3>
+						<p>
+							International Conference on Social Science, Language, Literature and
+							Education ,India is to provide opportunity for the global participants
+							to share their ideas and experience in person with their peers expected
+							to join from different parts on the world.
+						</p>
+						<a href="register.html">Register Here</a>
+					</div>
+					
+				</li>
+			</ul>
+		</div>
+	</section>
+</header>
+</body>
+</html>

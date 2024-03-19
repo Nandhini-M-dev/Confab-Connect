@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<style>
+* {
+  box-sizing: border-box;
+}
+body{
+    background-image: url('BG.png');
+    background-size: cover;
+    width:100%;
+    overflow: hidden;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;  
+  border: 1px solid orange;
+}
+
+input[type=text]:hover, select:hover , textarea:hover{
+    border:1px solid orange
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+.container
+{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+button {
+  background-color: orange;
+  padding: 12px 20px;
+  float: right;
+}
+button a{
+  text-decoration: none;
+  color:white;
+}
+button:hover {
+  background-color: green;
+  color: white;
+}
+
+.container {
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.col-25 {
+  color: white;
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.material-symbols-outlined
+{
+    color:white;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+sup
+{
+    margin-top: 200px;
+    color: white;
+}
+#back
+{
+    text-decoration: none;
+}
+
+#back sup:hover
+{
+    color: orange;
+}
+</style>
+</head>
+<body>
+  <h3><span class="material-symbols-outlined">arrow_back_ios</span><a id="back" href="conference.html"><sup>back</sup></a></h3>
+<h2 style="color: white;text-align: center;">Online Registration Form</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">State</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="tn">TamilNadu</option>
+        <option value="kn">Karnataka</option>
+        <option value="Kerala">Kerala</option>
+        <option value="andhra">AndhraPradesh</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="phone">Mobile Number</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="phone" name="pno" placeholder="Your mobile number...">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Subject</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <button><a href="#">Submit</a></button>
+  </div>
+  </form>
+</div>
+</body>
+</html>
+
